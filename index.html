@@ -7,6 +7,7 @@
   <meta name="description" content="Выбираем место отдыха после снятия ограничений.">
   <meta name="author" content="Иван Ермолаев">
   <meta name="author" content="Марина Сиренко">
+  <link rel="stylesheet" href="./pages/index.css">
   <link rel="stylesheet" href="./pages/style.css">
 </head>
 <body class="page">
@@ -29,7 +30,7 @@
               Реальность
             </a>
           </li>
-          <li class="header__item">
+          <li class="header__item header__item_right-side">
             <a class="header__link" href="https://www.litres.ru/malkolm-gladuell/genii-i-autsaydery/" target="_blank" rel="noopener noreferrer">
               Пожаловаться
             </a>
@@ -39,14 +40,26 @@
     </header>
     <main class="content">
       <section class="issue">
-        <p class="issue__subtitle">Куда я поеду</p>
-        <h1 class="issue__title">Куда я поеду сразу, как можно будет куда-то поехать</h1>
-        <img class="issue__image" src="#" alt="Хвост самолёта в небе">
+        <div class="issue__description">
+          <p class="issue__subtitle">Куда я поеду</p>
+          <h1 class="issue__title">Куда я поеду сразу, как можно будет куда-то поехать</h1>
+        </div>
+        <picture class="issue__semantic-wrap">
+          <source
+            srcset="./images/intro-image.webp"
+            type="image/webp">
+          <img class="issue__image" src="./images/intro-image.jpg" alt="Хвост самолёта в небе">
+        </picture>
       </section>
       <section class="destination">
         <ul class="cards">
           <li class="cards__item">
-            <img class="cards__image" src="#" alt="Мужчина любуется водопадом">
+            <picture class="cards__semantic-wrap">
+              <source
+                srcset="./images/places-forest.webp"
+                type="image/webp">
+              <img class="cards__image" src="./images/places-forest.jpg" alt="Мужчина любуется водопадом">
+            </picture>
             <div class="cards__description">
               <h2 class="cards__title">Поеду в лес</h2>
               <p class="cards__paragraph">Лес&nbsp;&mdash; экологическая система, биоценоз, в&nbsp;которой главной жизненной формой являются деревья.</p>
@@ -54,14 +67,24 @@
             </div>
           </li>
           <li class="cards__item">
-            <img class="cards__image" src="#" alt="Мужчина любуется горной вершиной">
+            <picture class="cards__semantic-wrap">
+              <source
+                srcset="./images/places-mountains.webp"
+                type="image/webp">
+              <img class="cards__image" src="./images/places-mountains.jpg" alt="Мужчина любуется горной вершиной">
+            </picture>
             <div class="cards__description">
               <h2 class="cards__title">Поеду в горы</h2>
               <p class="cards__paragraph">Горные системы занимают 64&nbsp;% поверхности Азии, 36&nbsp;%&nbsp;&mdash; Северной Америки, 25&nbsp;%&nbsp;&mdash; Европы, 22&nbsp;%&nbsp;&mdash; Южной Америки, 17&nbsp;%&nbsp;&mdash; Австралии и&nbsp;3&nbsp;%&nbsp;&mdash; Африки. В&nbsp;целом 24&nbsp;% земной поверхности приходится на&nbsp;горы.&nbsp;10&nbsp;% всех людей живёт на&nbsp;территории гор. В&nbsp;горах берёт своё начало большинство рек Земли.</p>
             </div>
           </li>
           <li class="cards__item">
-            <img class="cards__image" src="#" alt="Девушка смотрит на море">
+            <picture class="cards__semantic-wrap">
+              <source
+                srcset="./images/places-black-sea.webp"
+                type="image/webp">
+              <img class="cards__image" src="./images/places-black-sea.jpg" alt="Девушка смотрит на море">
+            </picture>
             <div class="cards__description">
               <h2 class="cards__title">Поеду на Чёрное море</h2>
               <p class="cards__paragraph">Я&nbsp;уплыву туда, где ни&nbsp;разу я&nbsp;не&nbsp;был, туда, где никто раньше не&nbsp;был. Никто и&nbsp;никогда раньше не&nbsp;был, я&nbsp;уплыву. Я&nbsp;позову тебя смотреть на&nbsp;синее небо и&nbsp;пить по&nbsp;капле синее небо, и&nbsp;падать в&nbsp;это синее небо, я&nbsp;позову.</p>
@@ -114,7 +137,7 @@
       </section>
       <section class="video">
         <p class="video__text">А пока что - сидим дома!</p>
-        <iframe class="video__youtube" src="https://www.youtube.com/embed/JGNiMutYBm4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen poster=""></iframe>  
+        <iframe class="video__youtube" src="https://www.youtube.com/embed/JGNiMutYBm4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen poster=""></iframe>
       </section>
     </main>
     <footer class="footer">
