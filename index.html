@@ -7,7 +7,7 @@
   <meta name="description" content="Выбираем место отдыха после снятия ограничений.">
   <meta name="author" content="Иван Ермолаев">
   <meta name="author" content="Марина Сиренко">
-  <link rel="stylesheet" href="/pages/style.css">
+  <link rel="stylesheet" href="./pages/style.css">
 </head>
 <body class="page">
   <div class="root">
@@ -102,22 +102,20 @@
         </ul>
       </section>
       <section class="solution">
-        <!-- Иван, тут твой выход - я о настройках формы -->
         <div class="form">
           <h2 class="form__heading">Так куда же я поеду?</h2>
           <fieldset class="form__container">
-            <label class="form__label-text"></label>
             <input class="form__item" placeholder="Я поеду ...">
-            <label class="form__label-text"></label>
-            <textarea class="form__item" placeholder="Потому что я ..."></textarea>
-          </fieldset>
-          <fieldset class="form__container">
+            <textarea class="form__text" placeholder="Потому что я ..."></textarea>
             <button class="form__btn">Поехали уже куда-нибудь!</button>
           </fieldset>
         </div>
-        <div class="solution__image"></div>
+        <img class="solution__image" src="./images/airport-schedule.jpg" alt="Рассисание полётов">
       </section>
-      <section class="video"></section>
+      <section class="video">
+        <p class="video__text">А пока что - сидим дома!</p>
+        <iframe class="video__youtube" src="https://www.youtube.com/embed/JGNiMutYBm4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen poster=""></iframe>  
+      </section>
     </main>
     <footer class="footer">
       <p class="footer__copyright">&copy;&nbsp;2020</p>
