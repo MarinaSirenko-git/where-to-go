@@ -1,1 +1,276 @@
+.header {
+  padding: 50px 70px 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    padding: 40px 40px 0;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .header {
+    display: none;
+  }
+}
+
+.header__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, max-content)) 1fr;
+}
+
+.header__item {
+  padding-right: 35px;
+}
+
+.header__item_right-side {
+  padding-right: 0;
+  justify-self: right;
+}
+
+.header__link {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #010101;
+  transition: all 0.6s ease;
+}
+
+.header__link:hover {
+  color:  #293DAD;
+}
+
+.issue {
+  padding: 90px 70px 130px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .issue {
+    padding: 60px 40px 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .issue {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(min-content, max-content) 400px;
+    align-items: stretch;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .issue {
+    padding: 40px 20px 40px;
+    grid-template-rows: minmax(min-content, max-content) 300px;
+  }
+}
+
+.section__subtitle {
+  font-size: 12px;
+  font-weight: 500;
+  color: #FED0AC;
+  text-transform: uppercase;
+  margin: 0 0 25px;
+}
+
+.section__title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  max-width: 480px;
+}
+
+@media screen and (max-width: 767px) {
+  .section__title {
+    margin: 0 0 30px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .section__title {
+    font-size: 24px;
+  }
+}
+
+.issue__semantic-wrap {
+  justify-self: center;
+}
+
+@media screen and (max-width: 767px) {
+  .issue__semantic-wrap {
+    justify-self: stretch;
+  }
+}
+.issue__image {
+  max-width: 360px;
+}
+
+@media screen and (max-width: 767px) {
+  .issue__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: left top;
+  }
+}
+
+.cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards__item {
+  display: grid;
+  grid-template-columns: minmax(50%, 1fr) minmax(50%, 1fr);
+  grid-auto-rows: 535px;
+}
+
+@media screen and (max-width: 1023px) {
+  .cards__item {
+    grid-auto-rows: 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cards__item {
+    grid-template-columns: minmax(min-content, max-content);
+    grid-template-rows: minmax(min-content, max-content) 350px;
+  }
+}
+
+.cards__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cards__description {
+  padding: 60px;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1023px) {
+  .cards__description {
+    padding: 45px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cards__description {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding: 40px;
+    justify-content: flex-start;
+  }
+}
+
+.cards__description_left-side {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.cards__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .cards__title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+.cards__paragraph {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 380px;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .cards__paragraph {
+    max-width: 80%;
+  }
+}
+
+.cards__paragraph_space {
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1023px) {
+  .cards__paragraph_space {
+    margin-bottom: 10px;
+  }
+}
+
+.people__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.people__blockquote {
+  margin: 0;
+}
+
+.people {
+  padding: 90px 70px 130px;
+}
+
+@media screen and (max-width: 1023px) {
+  .people {
+    padding: 60px 40px 60px;
+  }
+}
+
+.people__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+
+.people__item {
+  max-width: 22%;
+}
+
+@media screen and (max-width: 1023px) {
+  .people__item {
+    max-width: 47%;
+    margin-bottom: 50px;
+  }
+}
+
+.people__author {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.people__text {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 20px 0 0;
+  max-width: 400px;
+}
 
