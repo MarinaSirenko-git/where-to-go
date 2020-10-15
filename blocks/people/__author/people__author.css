@@ -1,0 +1,13 @@
+.people__author {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 484px) {
+  .people__author {
+    font-size: 14px;
+  }
+}
