@@ -1,0 +1,27 @@
+.issue {
+  padding: 90px 70px 130px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .issue {
+    padding: 60px 40px 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .issue {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(min-content, max-content) 400px;
+    align-items: stretch;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .issue {
+    padding: 40px 20px 40px;
+    grid-template-rows: minmax(min-content, max-content) 300px;
+  }
+}

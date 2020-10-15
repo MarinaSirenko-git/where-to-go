@@ -1,0 +1,9 @@
+.issue__semantic-wrap {
+  justify-self: center;
+}
+
+@media screen and (max-width: 767px) {
+  .issue__semantic-wrap {
+    justify-self: stretch;
+  }
+}
