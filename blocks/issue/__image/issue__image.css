@@ -1,0 +1,14 @@
+.issue__image {
+  max-width: 360px;
+}
+
+@media screen and (max-width: 767px) {
+  .issue__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: left top;
+  }
+}
