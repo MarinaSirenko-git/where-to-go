@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vw / 2.035);
+    background-color: #fecda7;
+    max-height: 622px;
+}
