@@ -1,6 +1,3 @@
 .video {
     position: relative;
-    width: 100%;
-    height: calc(100vw / 2.035);
-    max-height: 622px;
 }

@@ -8,7 +8,6 @@
   <meta name="author" content="Иван Ермолаев">
   <meta name="author" content="Марина Сиренко">
   <link rel="stylesheet" href="./pages/index.css">
-  <link rel="stylesheet" href="./pages/style.css">
 </head>
 <body class="page">
   <div class="root">
@@ -131,19 +130,26 @@
         </ul>
       </section>
       <section class="solution">
-        <div class="form">
+        <form class="form">
           <h2 class="form__heading">Так куда же я поеду?</h2>
-          <ul class="form__container">
-            <li class="form__line"><input class="form__item" placeholder="Я поеду ..."></li>
-            <li class="form__line"><textarea class="form__text" placeholder="Потому что я ..."></textarea></li>
-            <li class="form__line"><button class="form__btn">Поехали уже куда-нибудь!</button></li>
-          </ul>
-        </div>
-        <img class="solution__image" src="./images/airport-schedule.jpg" alt="Расписание полётов">
+            <input class="form__item" placeholder="Я поеду ...">
+            <textarea class="form__text" placeholder="Потому что я ..."></textarea>
+            <button class="form__btn">Поехали уже куда-нибудь!</button>
+        </form>
+        <picture class="solution__image-wrap">
+          <source
+            srcset="./images/airport-schedule.webp"
+            type="image/webp">
+          <img class="solution__image" src="./images/airport-schedule.jpg" alt="Расписание полётов">
+        </picture>
       </section>
       <section class="video">
-        <p class="video__text">А пока что - сидим дома!</p>
-        <iframe class="video__youtube" src="https://www.youtube.com/embed/JGNiMutYBm4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen poster=""></iframe>
+        <h2 class="video__text">А пока что - сидим дома!</h2>
+        <div class="video__container">
+          <video class="video__item" poster="./images/video.jpg" controls>
+            <source src="./video/hadn-dadn-song.mp4" type="video/mp4">
+          </video>
+        </div>
       </section>
     </main>
     <footer class="footer">

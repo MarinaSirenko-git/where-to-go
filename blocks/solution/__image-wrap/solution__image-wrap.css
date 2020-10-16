@@ -1,0 +1,15 @@
+.solution__image-wrap {
+  width: 50%;
+  display: block;
+  object-fit: cover;
+  object-position: left;
+}
+
+@media screen and (max-width: 767px) {
+  .solution__image-wrap {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: calc(100vw / 2.035);
+  }
+}

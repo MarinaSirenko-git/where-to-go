@@ -1,8 +1,22 @@
 .form__btn {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
   font-weight: 400;
   max-width: 190px;
+  width: 100%;
   color: #ffffff;
   background-color: black;
+  border: none;
+  height: 34px;
+  margin-top: 20px;
+  align-self: flex-end;
+  box-sizing: border-box;
+  cursor: pointer;                                    
+}
+
+
+@media screen and (max-width: 1120px) {
+  .form__btn {
+    align-self: flex-start;
+  }
 }
