@@ -5,4 +5,17 @@
   max-width: 190px;
   color: #ffffff;
   background-color: black;
+  appearance: none;
+  border: 0;
+  padding: 5px;
+}
+
+.form__btn:hover {
+  background: #293DAD;
+  transition: all 0.6s ease;
+}
+
+.form__btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
 }

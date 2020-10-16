@@ -1,7 +1,21 @@
 .form__container {
   list-style: none;
   padding: 0;
+  margin: 126px 0 0 0;
+  width: 100%;
   display: grid;
   grid-template-rows: 30px 100px 30px;
   gap: 16px;
+}
+
+@media screen and (max-width: 1023px) {
+  .form__container{
+    margin: 40px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form__container{
+    margin: 20px 0 0 0;
+  }
 }

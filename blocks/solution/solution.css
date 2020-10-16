@@ -1,5 +1,13 @@
 .solution {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-auto-flow: 565px;
-}
+    background-color: #F2F2F2;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    .solution {
+      grid-template-columns: 1fr;
+      grid-auto-rows: max-content;
+    }
+  }
