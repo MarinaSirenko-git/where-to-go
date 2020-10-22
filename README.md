@@ -18,6 +18,6 @@
 ### Можно лучше
 1. Если реализовывать блок cards через Flexbox, то самым простым способом менять порядок в блоке, будет свойство flex-direction: row-reverse у каждого нечётного потомка cards:nth-child(odd)
 2. Макет смотрелся бы лучше, если убрать ограничение max-width у блока .root
-3. 
+
 
 Ссылка на проект https://marinasirenko-git.github.io/where-to-go/
